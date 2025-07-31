@@ -170,16 +170,16 @@ background: rgba(255,255,255,0.08);
 /* Custom Styles for Kind To Mind */
 .section-offset {
   padding-top: 60px !important;
+}
+
 /* Reduced top padding only for Tips section */
 .tips-offset {
   padding-top: 24px !important;
-}
 }
 
 /* Only apply scroll-margin-top to sections except #hero */
 section.section-offset:not(#hero) {
   scroll-margin-top: 60px;
-}
 }
 .quiz-answer {
   margin: 0 20px 20px 20px;
@@ -292,14 +292,16 @@ h1, h2, .section-title {
   -webkit-text-fill-color: white;
 }
 body, p, .card-text {
+body, p, .card-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: #555;
+}
+
 .resource-card .card-title,
 .resource-card .card-text {
   font-family: 'Playfair Display', serif;
-}
 }
 .lead {
   font-family: 'Playfair Display', serif;
