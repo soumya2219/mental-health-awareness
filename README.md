@@ -9,15 +9,13 @@ and the colour pallette used was chosen to make the website look cheerful, colou
 
 Wireframes
 
-<img width="1024" height="1536" alt="Wireframe of Mental Health Website" src="https://github.com/user-attachments/assets/af5a5287-1c35-49c7-8d25-4ab7dd330bc7" />
+<img src="https://github.com/user-attachments/assets/af5a5287-1c35-49c7-8d25-4ab7dd330bc7" alt="Wireframe of Mental Health Website" width="400" />
 
-<img width="980" height="1177" alt="Wireframe of Kind To Mind Website" src="https://github.com/user-attachments/assets/e4bfd06c-ba69-43c2-a75c-34b96a8f87dd" />
+<img src="https://github.com/user-attachments/assets/e4bfd06c-ba69-43c2-a75c-34b96a8f87dd" alt="Wireframe of Kind To Mind Website" width="400" />
 
+<img src="https://github.com/user-attachments/assets/91d79407-43eb-45de-b832-589e2cf79656" alt="Responsive View 1" width="500" />
 
-<img width="1143" height="1545" alt="responsive1" src="https://github.com/user-attachments/assets/91d79407-43eb-45de-b832-589e2cf79656" />
-
-<img width="2559" height="1476" alt="responsive2" src="https://github.com/user-attachments/assets/c27305e4-af83-4e3e-8602-61a428c0fd7f" />
-
+<img src="https://github.com/user-attachments/assets/c27305e4-af83-4e3e-8602-61a428c0fd7f" alt="Responsive View 2" width="600" />
 
 
 ## 🌐 Live Demo
@@ -76,8 +74,17 @@ User Story------>		Acceptance Criteria
 
 
 Validation
+
+CSS
+
 <img width="1910" height="754" alt="validation1" src="https://github.com/user-attachments/assets/a0733990-2d88-443a-aaf0-48f66e46214e" />
+
+HTML
+
 <img width="2876" height="1045" alt="validation 2" src="https://github.com/user-attachments/assets/23cf4274-2cdd-4197-ae7a-cf234e18b652" />
+
+LIGHTHOUSE
+
 <img width="1898" height="885" alt="lighthouse" src="https://github.com/user-attachments/assets/bb04ef48-4784-4461-9bab-9ff65642f2dc" />
 
 
