@@ -2,6 +2,11 @@
 
 For my first project of building a static HTML + CSS website, I built Kind To Mind which is a gentle, supportive mental health awareness website designed to offer practical tips, trusted resources, and emotional encouragement. 
 
+I used Google fonts: Dancing Script	Logo, headings 
+and Playfair Display for Section titles, quotes, modals, contact form
+
+and the colour pallette used was chosen to make the website look cheerful, colourful, bright and inviting. Shades of pink and purple were used. 
+
 <img width="1143" height="1545" alt="responsive1" src="https://github.com/user-attachments/assets/91d79407-43eb-45de-b832-589e2cf79656" />
 
 <img width="2559" height="1476" alt="responsive2" src="https://github.com/user-attachments/assets/c27305e4-af83-4e3e-8602-61a428c0fd7f" />
