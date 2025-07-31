@@ -2,10 +2,26 @@
 
 For my first project of building a static HTML + CSS website, I built Kind To Mind which is a gentle, supportive mental health awareness website designed to offer practical tips, trusted resources, and emotional encouragement. 
 
-I used Google fonts: Dancing Script	Logo, headings 
-and Playfair Display for Section titles, quotes, modals, contact form
+ Typography
+Logo/Headers: Dancing Script
 
-and the colour pallette used was chosen to make the website look cheerful, colourful, bright and inviting. Shades of pink and purple were used. 
+Sections/Body Text: Playfair Display
+
+🎨 Colour Scheme
+Shades of pink and purple were used to create a cheerful, warm, and welcoming atmosphere.
+
+The palette was chosen for emotional softness and youth-friendly appeal.
+
+♿ Accessibility Features
+Semantic HTML structure (header, main, section, footer)
+
+Alt text on all images
+
+Clear heading hierarchy
+
+Colour contrast tested
+
+
 
 Wireframes
 
@@ -113,4 +129,8 @@ Pexels – for free, royalty-free images
 
 Online Image Converter – used to convert PNG and JPG images to WebP format
 
-GitHub Copilot in Visual Studio Code – provided intelligent code suggestions and assisted with debugging and problem-solving during development
+GitHub Copilot – offered code suggestions and assisted with debugging and problem-solving during development
+
+VS Code – Primary coding environment
+
+Chrome DevTools – Used for responsive design testing and layout fixes
