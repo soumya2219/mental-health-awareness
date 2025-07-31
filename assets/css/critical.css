@@ -1,0 +1,78 @@
+/* Critical above-the-fold CSS - Inline this in <head> for best performance */
+.navbar {
+  background: rgba(255, 244, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #dc6ed2, #ff71b1) 1;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  box-shadow: 0 2px 12px rgba(220, 110, 210, 0.08);
+}
+
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #dc6ed2, #ff71b1, #6a5acd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.hero-section {
+  background: linear-gradient(45deg, #dc6ed2, #ff71b1, #6a5acd);
+  color: white;
+}
+
+.hero-title {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  color: white !important;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  background: none;
+  -webkit-text-fill-color: white;
+}
+
+.hero-img {
+  width: 100%;
+  min-height: 450px;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+.lead {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Font loading optimization */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/dancingscript/v25/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B1i03Rep8ltA.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtXK-F2qO0isEw.woff2') format('woff2');
+}

@@ -5,8 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kind To Mind - Mental Health Awareness</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23dc6ed2'/%3E%3Cpath d='M30 40c0-5 4-9 9-9s9 4 9 9v20c0 5-4 9-9 9s-9-4-9-9V40zm22 0c0-5 4-9 9-9s9 4 9 9v20c0 5-4 9-9 9s-9-4-9-9V40z' fill='white'/%3E%3C/svg%3E">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="assets/images/hero1.webp" as="image" type="image/webp">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  
+  <!-- Preload critical fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+  
+  <!-- Load Bootstrap CSS asynchronously -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"></noscript>
+  
+  <!-- Critical CSS inline -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -44,7 +56,10 @@
       </div>
       <div class="col-lg-6 text-center mt-4 mt-lg-0 order-1 order-lg-1 d-flex align-items-stretch hero-img-col">
         <div class="hero-img-wrapper">
-          <img src="assets/images/hero1.webp" alt="Kind to Mind - Mental Health Awareness" class="hero-img" onerror="this.style.display='none'">
+          <picture>
+            <source srcset="assets/images/hero1.webp" type="image/webp">
+            <img src="assets/images/hero1.png" alt="Kind to Mind - Mental Health Awareness" class="hero-img" loading="eager">
+          </picture>
         </div>
       </div>
     </div>
@@ -58,7 +73,10 @@
     <h2 class="mb-4 text-center">About Mental Health</h2>
     <div class="row justify-content-center align-items-start g-0">
       <div class="col-md-5 mb-md-0 d-flex align-items-start">
-        <img src="assets/images/aboutmental.webp" alt="About Mental Health" class="img-fluid rounded shadow about-img">
+        <picture>
+          <source srcset="assets/images/aboutmental.webp" type="image/webp">
+          <img src="assets/images/aboutmental.png" alt="About Mental Health" class="img-fluid rounded shadow about-img" loading="lazy">
+        </picture>
       </div>
       <div class="col-md-7">
         <p>Kind To Mind is a mental health awareness space designed to offer gentle support, practical information, and trusted resources for everyday wellbeing.</p>
@@ -165,7 +183,10 @@
           <div class="card-body">
             <h5 class="card-title mb-3">Stay Connected</h5>
             <div class="tips-img-square mb-3 mx-auto">
-              <img src="assets/images/stayconnected.webp" alt="Stay Connected" class="img-fluid rounded tips-img">
+              <picture>
+                <source srcset="assets/images/stayconnected.webp" type="image/webp">
+                <img src="assets/images/stayconnected.png" alt="Stay Connected" class="img-fluid rounded tips-img" loading="lazy">
+              </picture>
             </div>
             <button class="btn btn-outline-info" type="button" data-bs-toggle="modal" data-bs-target="#tipModal1">Learn More</button>
           </div>
@@ -177,7 +198,10 @@
           <div class="card-body">
             <h5 class="card-title mb-3">Get Active</h5>
             <div class="tips-img-square mb-3 mx-auto">
-              <img src="assets/images/getactive.webp" alt="Get Active" class="img-fluid rounded tips-img">
+              <picture>
+                <source srcset="assets/images/getactive.webp" type="image/webp">
+                <img src="assets/images/getactive.png" alt="Get Active" class="img-fluid rounded tips-img" loading="lazy">
+              </picture>
             </div>
             <button class="btn btn-outline-info" type="button" data-bs-toggle="modal" data-bs-target="#tipModal2">Learn More</button>
           </div>
@@ -189,7 +213,10 @@
           <div class="card-body">
             <h5 class="card-title mb-3">Practice Self-care</h5>
             <div class="tips-img-square mb-3 mx-auto">
-              <img src="assets/images/selfcare.webp" alt="Practice Self-care" class="img-fluid rounded tips-img">
+              <picture>
+                <source srcset="assets/images/selfcare.webp" type="image/webp">
+                <img src="assets/images/selfcare.png" alt="Practice Self-care" class="img-fluid rounded tips-img" loading="lazy">
+              </picture>
             </div>
             <button class="btn btn-outline-info" type="button" data-bs-toggle="modal" data-bs-target="#tipModal3">Learn More</button>
           </div>
@@ -201,7 +228,10 @@
           <div class="card-body">
             <h5 class="card-title mb-3">Limit Screen Time</h5>
             <div class="tips-img-square mb-3 mx-auto">
-              <img src="assets/images/limitscreen.webp" alt="Limit Screen Time" class="img-fluid rounded tips-img">
+              <picture>
+                <source srcset="assets/images/limitscreen.webp" type="image/webp">
+                <img src="assets/images/limitscreen.png" alt="Limit Screen Time" class="img-fluid rounded tips-img" loading="lazy">
+              </picture>
             </div>
             <button class="btn btn-outline-info" type="button" data-bs-toggle="modal" data-bs-target="#tipModal4">Learn More</button>
           </div>
@@ -213,7 +243,10 @@
           <div class="card-body">
             <h5 class="card-title mb-3">Ask for Help</h5>
             <div class="tips-img-square mb-3 mx-auto">
-              <img src="assets/images/askhelp.webp" alt="Ask for Help" class="img-fluid rounded tips-img">
+              <picture>
+                <source srcset="assets/images/askhelp.webp" type="image/webp">
+                <img src="assets/images/askhelp.png" alt="Ask for Help" class="img-fluid rounded tips-img" loading="lazy">
+              </picture>
             </div>
             <button class="btn btn-outline-info" type="button" data-bs-toggle="modal" data-bs-target="#tipModal5">Learn More</button>
           </div>
@@ -225,7 +258,10 @@
           <div class="card-body">
             <h5 class="card-title mb-3">Practice Mindfulness</h5>
             <div class="tips-img-square mb-3 mx-auto">
-              <img src="assets/images/mindfull.webp" alt="Practice Mindfulness" class="img-fluid rounded tips-img">
+              <picture>
+                <source srcset="assets/images/mindfull.webp" type="image/webp">
+                <img src="assets/images/mindfull.png" alt="Practice Mindfulness" class="img-fluid rounded tips-img" loading="lazy">
+              </picture>
             </div>
             <button class="btn btn-outline-info" type="button" data-bs-toggle="modal" data-bs-target="#tipModal6">Learn More</button>
           </div>
@@ -584,7 +620,7 @@
   </div>
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS - defer loading for better performance -->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
