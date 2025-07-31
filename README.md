@@ -32,7 +32,7 @@ For my first project of building a static HTML + CSS website, I built Kind To Mi
 
 
 👥 User Stories and Acceptance Criteria
-User Story	Acceptance Criteria
+User Story------>		Acceptance Criteria
 🏠 As a first-time visitor, I want to be greeted with a calming message, so I feel safe and welcomed---->	Homepage displays “You're not alone” message and intro paragraph
 📱 As a user, I want a navigation bar to access different sections easily.	---->	Nav links to Home, About, Tips, Resources, Myths, Contact; smooth scrolling
 🌱 As someone seeking help, I want to see practical wellbeing tips.	---->	6+ mental health tips visible and clearly labeled
@@ -53,8 +53,6 @@ Validation
 
 
 
-📩 Contact
-Feel free to open an issue or message if you'd like to collaborate or give feedback.
 
 🙏 Acknowledgements
 Resources used:Links to external websites:
