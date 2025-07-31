@@ -1,0 +1,566 @@
+/* Myths Section Background Image */
+
+#resources.section-offset {
+  position: relative;
+  background: url('../images/pexels.jpg') center center/cover no-repeat;
+  z-index: 1;
+}
+#resources.section-offset::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.82); /* soft white overlay for readability */
+  z-index: 2;
+}
+#resources.section-offset > .container {
+  position: relative;
+  z-index: 3;
+}
+/* Myths Section Beautification */
+.myth-card {
+  background: linear-gradient(120deg, #f3e7fa 60%, #eaf6ff 100%);
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(162,89,217,0.08);
+  transition: box-shadow 0.3s;
+}
+.myth-card:hover {
+  box-shadow: 0 8px 32px rgba(162,89,217,0.18);
+}
+.myth-header {
+  background: transparent;
+  border-bottom: none;
+  padding-top: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+.myth-btn {
+  background: #ffb3d6;
+  color: #6a5acd;
+  border: none;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(255,179,214,0.18);
+  transition: background 0.2s, color 0.2s;
+}
+.myth-btn:hover {
+  background: #dc6ed2;
+  color: #fff;
+}
+.fact-btn {
+  background: #c6e6ff;
+  color: #2d7be5;
+  border: none;
+  font-weight: 600;
+  border-radius: 2rem;
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(198,230,255,0.18);
+  transition: background 0.2s, color 0.2s;
+}
+.fact-btn:hover {
+  background: #6a5acd;
+  color: #fff;
+}
+.quiz-answer {
+  font-size: 1.08rem;
+  padding: 1.1rem 1.3rem;
+  border-radius: 0.7rem;
+  margin: 0.5rem 0 1.2rem 0;
+  box-shadow: 0 2px 12px rgba(162,89,217,0.07);
+}
+.myth-answer {
+  background: #f8eafd;
+  color: #6a5acd;
+  border-left: 4px solid #dc6ed2;
+}
+.fact-answer {
+  background: #eaf6ff;
+  color: #2d7be5;
+  border-left: 4px solid #6a5acd;
+}
+.animate-reveal {
+  animation: fadeInUp 0.7s cubic-bezier(.23,1.01,.32,1) both;
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+/* Purple hover shadow for resource cards */
+.resource-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+  border: 2px solid #a259d9 !important; /* force border even with border-0 */
+  box-shadow: 0 2px 8px rgba(162, 89, 217, 0.08);
+  transition: box-shadow 0.3s, border-color 0.3s;
+background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(2px);
+}
+.resource-card.border-0 {
+  border: 2px solid #a78bfa !important;
+}
+.resource-card:hover {
+  box-shadow: 0 0 0 0.25rem rgba(123, 104, 238, 0.25), 0 8px 32px 0 rgba(123, 104, 238, 0.35);
+  border: 2px solid #7b6aee;
+  transform: translateY(-4px) scale(1.03);
+}
+/* Ensure hero section shows at the very top when navigated to */
+#hero {
+  scroll-margin-top: 72px !important;
+}
+#about .col-md-5 {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+#about .col-md-7 {
+}
+#about .col-md-7 p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.08rem;
+  color: #444;
+  line-height: 1.7;
+  padding-left: 2.2rem;
+  padding-right: 1.2rem;
+}
+
+@media (max-width: 767.98px) {
+  #about .col-md-5 {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+  #about .col-md-7 {
+    padding-left: 1.4rem;
+    padding-right: 0.8rem;
+  }
+}
+@media (max-width: 767.98px) {
+  #hero .hero-title {
+    margin-top: 2.2rem;
+    font-size: 2rem;
+  }
+  #hero .lead {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  #about .container {
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+  #about .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #about .col-md-5 {
+    margin-top: 12px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  #about img {
+    max-width: 180px;
+  }
+  #about .col-md-7 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+/* Lower the About section image */
+#about .col-md-5 {
+  margin-top: 18px;
+}
+/* Custom Styles for Kind To Mind */
+.section-offset {
+  padding-top: 60px !important;
+/* Reduced top padding only for Tips section */
+.tips-offset {
+  padding-top: 24px !important;
+}
+}
+
+/* Only apply scroll-margin-top to sections except #hero */
+section.section-offset:not(#hero) {
+  scroll-margin-top: 60px;
+}
+}
+.quiz-answer {
+  margin: 0 20px 20px 20px;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #6c5ce7;
+  background: linear-gradient(135deg, rgba(108, 92, 231, 0.05), rgba(220, 110, 210, 0.05));
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.quiz-answer.myth-answer {
+  border-left-color: #fd79a8;
+  background: linear-gradient(135deg, rgba(253, 121, 168, 0.08), rgba(255, 113, 177, 0.08));
+  color: #2d3436;
+}
+.quiz-answer.fact-answer {
+  border-left-color: #00b894;
+  background: linear-gradient(135deg, rgba(0, 184, 148, 0.08), rgba(0, 206, 201, 0.08));
+  color: #2d3436;
+}
+#quiz h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.3rem;
+}
+#quiz p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.6;
+}
+#quiz .btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #dc6ed2, #ff71b1, #6a5acd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.navbar-brand:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+.navbar {
+  background: rgba(255, 244, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #dc6ed2, #ff71b1) 1;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  box-shadow: 0 2px 12px rgba(220, 110, 210, 0.08);
+}
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #666 !important;
+  position: relative;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+  border-radius: 20px;
+  padding: 8px 16px !important;
+}
+.nav-link:hover {
+  color: #dc6ed2 !important;
+  background: linear-gradient(135deg, rgba(220, 110, 210, 0.1), rgba(255, 113, 177, 0.1));
+  transform: translateY(-2px);
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: linear-gradient(90deg, #dc6ed2, #ff71b1);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.nav-link:hover::after {
+  width: 80%;
+}
+h1, h2, .section-title {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  background: linear-gradient(45deg, #dc6ed2, #ff71b1, #6a5acd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+.hero-title {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  color: white !important;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  background: none;
+  -webkit-text-fill-color: white;
+}
+body, p, .card-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #555;
+.resource-card .card-title,
+.resource-card .card-text {
+  font-family: 'Playfair Display', serif;
+}
+}
+.lead {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.blockquote p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.form-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #444;
+}
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.hero-gradient-bg {
+  background: linear-gradient(45deg, #dc6ed2, #ff71b1, #6a5acd);
+}
+/* Affirmations Carousel Custom Spacing */
+#affirmationsCarousel {
+  margin-bottom: 1.5rem;
+}
+#affirmationsCarousel .carousel-indicators {
+  bottom: -2.5rem;
+  z-index: 2;
+}
+#affirmationsCarousel .carousel-inner {
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+}
+/* Affirmations carousel progress bar pink color */
+#affirmationsCarousel .carousel-indicators [data-bs-target] {
+  background-color: #ff71b1;
+  opacity: 0.5;
+}
+#affirmationsCarousel .carousel-indicators .active {
+  background-color: #dc6ed2;
+  opacity: 1;
+}
+/* Tips Cards Custom Styles */
+#tips .card {
+  transition: box-shadow 0.2s;
+  border-radius: 16px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tips .card:hover {
+  box-shadow: 0 6px 24px rgba(108,92,231,0.12);
+}
+#tips .card-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #6c5ce7;
+  text-align: center;
+}
+#tips .card {
+  background: #fff0f6;
+  box-sizing: border-box;
+}
+#tips .btn-link {
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+/* Square image wrapper for tips cards */
+.tips-img-square {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f8f9fa;
+}
+/* Tips Modal Custom Styles */
+/* Tips Modal Custom Styles */
+.tips-modal .modal-content {
+  background: linear-gradient(45deg, #f8e6fa, #ffe3f1, #e6e6fa);
+  border-radius: 18px;
+  color: #444;
+}
+.tips-modal .modal-header {
+  background: none;
+  border-bottom: none;
+}
+.tips-modal .modal-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #dc6ed2, #ff71b1, #6a5acd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.08);
+}
+.tips-modal .modal-body {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.13rem;
+  line-height: 1.8;
+  color: #6c5ce7;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+.tips-modal .modal-footer {
+  background: none;
+  border-top: none;
+}
+
+/* Contact section font: Use Playfair Display for all contact form elements */
+#contact .contact-label,
+#contact .contact-intro,
+#contact .form-control,
+#contact #contactSuccess,
+#contact .btn {
+  font-family: 'Playfair Display', serif !important;
+}
+
+/* Footer styles: Gradient background, icons, and responsive adjustments */
+.footer-custom {
+  background: linear-gradient(90deg, #dc6ed2 0%, #ff71b1 100%);
+  border-top: 0;
+  box-shadow: 0 -2px 16px 0 rgba(108,92,231,0.10);
+  position: relative;
+  z-index: 2;
+}
+.footer-custom .footer-title {
+  text-shadow: 0 2px 8px #6c5ce733;
+}
+.footer-custom .footer-year {
+  font-weight: 500;
+}
+.footer-custom p {
+  margin-bottom: 0;
+}
+.footer-custom .footer-icon svg {
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #dc6ed222;
+}
+.footer-custom .footer-icon:hover svg {
+  transform: scale(1.12);
+  box-shadow: 0 4px 16px #dc6ed244;
+}
+@media (max-width: 576px) {
+  .footer-custom .footer-title {
+    font-size: 1.2rem;
+  }
+  .footer-custom .footer-year {
+    font-size: 0.98rem;
+  }
+  .footer-custom .footer-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Navbar custom link style */
+.navbar-link-custom {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.7rem;
+}
+
+/* Hero section styles */
+.hero-section {
+  background: linear-gradient(45deg, #dc6ed2, #ff71b1, #6a5acd);
+  color: white;
+}
+.hero-row {
+  min-height: 450px;
+}
+.hero-btn {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.35rem;
+}
+.hero-img-col {
+  min-height: 350px;
+}
+.hero-img-wrapper {
+  width: 100%;
+  min-height: 450px;
+}
+.hero-img {
+  width: 100%;
+  min-height: 450px;
+  object-fit: cover;
+  border-radius: 0;
+  display: block;
+}
+
+/* About section image */
+.about-img {
+  max-width: 420px;
+}
+
+/* Tips section images */
+.tips-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Resource icons */
+.resource-icon-wrapper {
+  height: 40px;
+}
+.resource-icon {
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Contact section intro and form */
+.contact-intro {
+  font-size: 1.15rem;
+  color: #6c5ce7;
+}
+.contact-form-custom {
+  max-width: 500px;
+  font-size: 1.08rem;
+  color: #222;
+}
+
+/* Footer styles */
+.footer-heart {
+  font-size: 1.7rem;
+  color: #dc6ed2;
+  vertical-align: middle;
+}
+.footer-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.footer-year {
+  color: #fff;
+  font-size: 1.08rem;
+}
+.footer-social-svg {
+  vertical-align: middle;
+}
+.footer-made {
+  color: #f8e1f4;
+  font-size: 1.08rem;
+}
