@@ -33,16 +33,16 @@ For my first project of building a static HTML + CSS website, I built Kind To Mi
 
 👥 User Stories and Acceptance Criteria
 User Story	Acceptance Criteria
-🏠 As a first-time visitor, I want to be greeted with a calming message, so I feel safe and welcomed.	Homepage displays “You're not alone” message and intro paragraph
-📱 As a user, I want a navigation bar to access different sections easily.	Nav links to Home, About, Tips, Resources, Myths, Contact; smooth scrolling
-🌱 As someone seeking help, I want to see practical wellbeing tips.	6+ mental health tips visible and clearly labeled
-🧭 As a person in need, I want to find trusted support resources.	Resource links (Mind, NHS, etc.) open in new tab with brief descriptions
-💖 As a user feeling low, I want to read affirmations to uplift me.	Affirmation section includes “You Are Worthy 💖” and a positive quote
-❓ As a learner, I want to test mental health myths and facts.	4+ quiz items with true/false interactivity or labels
-📨 As a visitor, I want to send a message for help or feedback.	Contact form includes Name, Email, Message fields with validation
-📱 As a mobile user, I want everything to display properly on my phone.	Fully responsive layout with mobile nav and readable text
-🧠 As a returning visitor, I want to recognize the site in my browser tab.	Favicon loads correctly (SVG or ICO), with no validation errors
-🧒 As a young person, I want the language to feel kind and inclusive.	Content uses gentle tone, includes youth stats, avoids triggering language
+🏠 As a first-time visitor, I want to be greeted with a calming message, so I feel safe and welcomed---->	Homepage displays “You're not alone” message and intro paragraph
+📱 As a user, I want a navigation bar to access different sections easily.	---->	Nav links to Home, About, Tips, Resources, Myths, Contact; smooth scrolling
+🌱 As someone seeking help, I want to see practical wellbeing tips.	---->	6+ mental health tips visible and clearly labeled
+🧭 As a person in need, I want to find trusted support resources.---->		Resource links (Mind, NHS, etc.) open in new tab with brief descriptions
+💖 As a user feeling low, I want to read affirmations to uplift me.---->		Affirmation section includes “You Are Worthy 💖” and a positive quote
+❓ As a learner, I want to test mental health myths and facts.---->		4+ quiz items with true/false interactivity or labels
+📨 As a visitor, I want to send a message for help or feedback.---->		Contact form includes Name, Email, Message fields with validation
+📱 As a mobile user, I want everything to display properly on my phone.	---->	Fully responsive layout with mobile nav and readable text
+🧠 As a returning visitor, I want to recognize the site in my browser tab.---->		Favicon loads correctly 
+🧒 As a young person, I want the language to feel kind and inclusive.	---->	Content uses gentle tone, includes youth stats, avoids triggering language
 
 🖼️ Screenshots
 
