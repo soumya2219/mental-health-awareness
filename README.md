@@ -7,6 +7,13 @@ and Playfair Display for Section titles, quotes, modals, contact form
 
 and the colour pallette used was chosen to make the website look cheerful, colourful, bright and inviting. Shades of pink and purple were used. 
 
+Wireframes
+
+<img width="1024" height="1536" alt="Wireframe of Mental Health Website" src="https://github.com/user-attachments/assets/af5a5287-1c35-49c7-8d25-4ab7dd330bc7" />
+
+<img width="980" height="1177" alt="Wireframe of Kind To Mind Website" src="https://github.com/user-attachments/assets/e4bfd06c-ba69-43c2-a75c-34b96a8f87dd" />
+
+
 <img width="1143" height="1545" alt="responsive1" src="https://github.com/user-attachments/assets/91d79407-43eb-45de-b832-589e2cf79656" />
 
 <img width="2559" height="1476" alt="responsive2" src="https://github.com/user-attachments/assets/c27305e4-af83-4e3e-8602-61a428c0fd7f" />
@@ -35,7 +42,7 @@ and the colour pallette used was chosen to make the website look cheerful, colou
 
 - HTML5  
 - CSS3  
-- Google Fonts (for soft typography)  
+- Google Fonts (for typography)  
 - Bootstrap
 
 ---
@@ -71,12 +78,16 @@ User Story------>		Acceptance Criteria
 Validation
 <img width="1910" height="754" alt="validation1" src="https://github.com/user-attachments/assets/a0733990-2d88-443a-aaf0-48f66e46214e" />
 <img width="2876" height="1045" alt="validation 2" src="https://github.com/user-attachments/assets/23cf4274-2cdd-4197-ae7a-cf234e18b652" />
+<img width="1898" height="885" alt="lighthouse" src="https://github.com/user-attachments/assets/bb04ef48-4784-4461-9bab-9ff65642f2dc" />
+
 
 
 
 
 🙏 Acknowledgements
-Resources used:Links to external websites:
+This project was made possible with the support of the following resources and tools:
+
+Mental Health & Wellbeing Support
 Mind
 
 NHS Mental Health
@@ -89,7 +100,10 @@ Childline
 
 Headspace
 
-- Pexels for royalty free images
--Online converter to convert png and jpg images to webp
+Development Tools & Assets
 
-Copilot in VS Code to help with debugging, genera
+Pexels – for free, royalty-free images
+
+Online Image Converter – used to convert PNG and JPG images to WebP format
+
+GitHub Copilot in Visual Studio Code – provided intelligent code suggestions and assisted with debugging and problem-solving during development
